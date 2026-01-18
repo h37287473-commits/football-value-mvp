@@ -1,0 +1,3844 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Real Transfer Value - The People's Football Market</title>
+        
+        <meta name="description" content="Don't trust the official fees. Vote and discover the TRUE market value of football players based on real fan consensus.">
+        
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://realtransfervalue.com/">
+        <meta property="og:title" content="Real Transfer Value - The People's Football Market">
+        <meta property="og:description" content="Don't trust the official fees. Vote and discover the TRUE market value of football players based on real fan consensus.">
+        <meta property="og:image" content="https://realtransfervalue.com/og-image.png">
+    
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://realtransfervalue.com/">
+        <meta name="twitter:title" content="Real Transfer Value - The People's Football Market">
+        <meta name="twitter:description" content="Don't trust the official fees. Vote and discover the TRUE market value of football players based on real fan consensus.">
+        <meta name="twitter:image" content="https://realtransfervalue.com/og-image.png">
+    
+        <meta name="google-site-verification" content="t3GFyoHHraiMjtGmTUNF53H-aDeKlIOs_p_h4dtjbh8">
+    <style>
+        /* ============================================
+           PROFESSIONAL FOOTBALL APP STYLES
+           Mobile-First, Monetizable Design
+           ============================================ */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gold: #ffd700;
+            --silver: #c0c0c0;
+            --bronze: #cd7f32;
+            --success-green: #10b981;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-white: #ffffff;
+            --bg-gray: #f9fafb;
+            --border-color: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        html {
+            height: auto !important;       /* ❌ Do NOT use 100vh */
+            min-height: 100vh;             /* ✅ Allow it to grow */
+            overflow-y: auto !important;   /* ✅ Force vertical scrollbar */
+            overflow-x: hidden;            /* Keep horizontal clean */
+        }
+        
+      body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            height: auto !important;       /* ❌ Do NOT use 100vh */
+            min-height: 100vh;             /* ✅ Allow it to grow */
+            overflow-y: auto !important;   /* ✅ Force vertical scrollbar */
+            overflow-x: hidden;            /* Keep horizontal clean */
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+        
+        /* 2. UNLOCK CONTAINER (Wrapper) */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            height: auto !important;      /* Let content push it down */
+            overflow: visible !important; /* Don't clip content */
+            display: block;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-section .hero-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+        
+        @media (min-width: 640px) {
+            .hero-section {
+                padding: 5rem 3rem;
+            }
+            
+            .hero-section h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-section .hero-subtitle {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* ===== HEADER ===== */
+        .page-header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .page-header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 0.875rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        /* ===== SEARCH SECTION ===== */
+        .search-section {
+            padding: 1.25rem 1rem;
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .search-wrapper {
+        max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .search-label {
+            display: none; /* Hidden for cleaner look */
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            font-size: 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            background: var(--bg-gray);
+            color: var(--text-primary);
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+            background: var(--bg-white);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .search-input::placeholder {
+            color: var(--text-secondary);
+        }
+
+        /* ===== RANKING SECTION ===== */
+        .ranking-section {
+            padding: 1.5rem 1rem;
+        }
+
+        .ranking-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .ranking-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .ranking-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .ranking-list {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        /* Leaderboard List */
+        .leaderboard-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            width: 100%;
+        }
+        
+        .leaderboard-item {
+            background: var(--bg-white);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        cursor: pointer;
+            position: relative;
+        }
+        
+        .leaderboard-item:hover {
+            transform: translateX(4px);
+            box-shadow: var(--shadow-md);
+            border-color: #667eea;
+        }
+        
+        .leaderboard-item-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex: 1;
+            min-width: 0;
+        }
+        
+        /* Rank Badge */
+        .leaderboard-rank {
+            min-width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.125rem;
+            flex-shrink: 0;
+            background: var(--bg-gray);
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
+        }
+        
+        .leaderboard-item.rank-1 .leaderboard-rank {
+            background: linear-gradient(135deg, var(--gold) 0%, #ffed4e 100%);
+            color: #1f2937;
+            border-color: var(--gold);
+        }
+        
+        .leaderboard-item.rank-2 .leaderboard-rank {
+            background: linear-gradient(135deg, var(--silver) 0%, #e8e8e8 100%);
+            color: #1f2937;
+            border-color: var(--silver);
+        }
+        
+        .leaderboard-item.rank-3 .leaderboard-rank {
+            background: linear-gradient(135deg, var(--bronze) 0%, #e6a85c 100%);
+            color: white;
+            border-color: var(--bronze);
+        }
+        
+        /* Avatar */
+        .leaderboard-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .leaderboard-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+        
+        /* Avatar fallback - show icon if no image */
+        .leaderboard-avatar:empty::before {
+            content: '👤';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            font-size: 1.5rem;
+        }
+        
+        /* Player Info */
+        .leaderboard-info {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .leaderboard-name {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+        
+        .leaderboard-club {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Value */
+        .leaderboard-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--success-green);
+            text-align: right;
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-right: 1rem;
+        }
+        
+        /* Rate Now Button */
+        .leaderboard-rate-btn {
+            padding: 8px 16px;
+            background: #e2e8f0;
+            border: none;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        
+        .leaderboard-rate-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        /* ===== PLAYER CARD ===== */
+        .ranking-item {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ranking-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #667eea;
+            transition: width 0.2s ease;
+        }
+
+        .ranking-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            border-color: #667eea;
+        }
+
+        .ranking-item:hover::before {
+            width: 6px;
+        }
+
+        /* Top 3 Special Styling */
+        .ranking-item.rank-1 {
+            background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+            border-color: var(--gold);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+        }
+
+        .ranking-item.rank-1::before {
+            background: var(--gold);
+            width: 6px;
+        }
+
+        .ranking-item.rank-2 {
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            border-color: var(--silver);
+            box-shadow: 0 4px 12px rgba(192, 192, 192, 0.2);
+        }
+
+        .ranking-item.rank-2::before {
+            background: var(--silver);
+            width: 6px;
+        }
+
+        .ranking-item.rank-3 {
+            background: linear-gradient(135deg, #faf5f0 0%, #ffffff 100%);
+            border-color: var(--bronze);
+            box-shadow: 0 4px 12px rgba(205, 127, 50, 0.2);
+        }
+
+        .ranking-item.rank-3::before {
+            background: var(--bronze);
+            width: 6px;
+        }
+
+        /* Rank Badge */
+        .rank-badge {
+            min-width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.125rem;
+            flex-shrink: 0;
+            background: var(--bg-gray);
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
+        }
+
+        .rank-1 .rank-badge {
+            background: linear-gradient(135deg, var(--gold) 0%, #ffed4e 100%);
+            color: #1f2937;
+            border-color: var(--gold);
+            box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+        }
+
+        .rank-2 .rank-badge {
+            background: linear-gradient(135deg, var(--silver) 0%, #e8e8e8 100%);
+            color: #1f2937;
+            border-color: var(--silver);
+            box-shadow: 0 2px 8px rgba(192, 192, 192, 0.3);
+        }
+
+        .rank-3 .rank-badge {
+            background: linear-gradient(135deg, var(--bronze) 0%, #e6a85c 100%);
+            color: white;
+            border-color: var(--bronze);
+            box-shadow: 0 2px 8px rgba(205, 127, 50, 0.3);
+        }
+
+        /* Player Image Placeholder */
+        .player-image {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .player-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Player Info */
+        .player-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .player-name {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .player-meta {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .player-meta span {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .player-meta span:not(:last-child)::after {
+            content: '·';
+            margin-left: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        /* Market Value */
+        .consensus-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--success-green);
+            text-align: right;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .rank-1 .consensus-value,
+        .rank-2 .consensus-value,
+        .rank-3 .consensus-value {
+            font-size: 1.375rem;
+        }
+
+        /* ===== STATES ===== */
+        .loading-spinner {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .error-msg {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #ef4444;
+            background: #fef2f2;
+            border-radius: 12px;
+            margin: 1rem;
+            border: 1px solid #fecaca;
+        }
+
+        /* ===== FOOTER ===== */
+        .page-footer {
+            padding: 1.5rem 1rem;
+            text-align: center;
+            background: var(--bg-white);
+            border-top: 1px solid var(--border-color);
+            margin-top: 2rem;
+        }
+
+        .footer-text {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        #connection-status {
+            font-weight: 600;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (min-width: 640px) {
+            .page-header {
+                padding: 2rem 1.5rem;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .search-section {
+                padding: 1.5rem 1.5rem;
+            }
+
+            .ranking-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .ranking-title {
+                font-size: 2rem;
+            }
+            
+            /* Tablet: 3 columns */
+            .players-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem;
+            }
+            
+            .card-name {
+                font-size: 1rem;
+            }
+            
+            .card-value {
+                font-size: 1.375rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1400px;
+            }
+
+            /* Desktop: 4-5 columns */
+            .players-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.5rem;
+            }
+            
+            .card-name {
+                font-size: 1.0625rem;
+            }
+            
+            .card-value {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            /* Large Desktop: 5 columns */
+            .players-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+        
+        /* Mobile: Show vote badge, hide hover overlay */
+        @media (max-width: 639px) {
+            .card-vote-badge {
+                display: block;
+            }
+            
+            .card-hover-overlay {
+                display: none;
+            }
+            
+            .card-name {
+                font-size: 0.875rem;
+            }
+            
+            .card-value {
+                font-size: 1.125rem;
+            }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .ranking-item {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .ranking-item:nth-child(1) { animation-delay: 0.05s; }
+        .ranking-item:nth-child(2) { animation-delay: 0.1s; }
+        .ranking-item:nth-child(3) { animation-delay: 0.15s; }
+        .ranking-item:nth-child(4) { animation-delay: 0.2s; }
+        .ranking-item:nth-child(5) { animation-delay: 0.25s; }
+
+        /* ===== RESPONSIVE GRID SYSTEM ===== */
+        
+        /* Player Card */
+        .player-card {
+            background: var(--bg-white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 2px solid var(--border-color);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .player-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        /* Top 3 Special Styling */
+        .player-card.rank-1 {
+            border: 3px solid var(--gold);
+            box-shadow: 0 4px 16px rgba(255, 215, 0, 0.3);
+            background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+        }
+        
+        .player-card.rank-1:hover {
+            box-shadow: 0 6px 24px rgba(255, 215, 0, 0.4);
+        }
+        
+        .player-card.rank-2 {
+            border: 2px solid var(--silver);
+            box-shadow: 0 4px 16px rgba(192, 192, 192, 0.25);
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+        }
+        
+        .player-card.rank-2:hover {
+            box-shadow: 0 6px 24px rgba(192, 192, 192, 0.35);
+        }
+        
+        .player-card.rank-3 {
+            border: 2px solid var(--bronze);
+            box-shadow: 0 4px 16px rgba(205, 127, 50, 0.25);
+            background: linear-gradient(135deg, #faf5f0 0%, #ffffff 100%);
+        }
+        
+        .player-card.rank-3:hover {
+            box-shadow: 0 6px 24px rgba(205, 127, 50, 0.35);
+        }
+        
+        /* Rank Badge */
+        .card-rank-badge {
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 0.375rem 0.625rem;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .crown-icon-small {
+            font-size: 0.875rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+        
+        .player-card.rank-1 .card-rank-badge {
+            background: linear-gradient(135deg, var(--gold) 0%, #ffed4e 100%);
+            color: #1f2937;
+        }
+        
+        .player-card.rank-2 .card-rank-badge {
+            background: linear-gradient(135deg, var(--silver) 0%, #e8e8e8 100%);
+            color: #1f2937;
+        }
+        
+        .player-card.rank-3 .card-rank-badge {
+            background: linear-gradient(135deg, var(--bronze) 0%, #e6a85c 100%);
+            color: white;
+        }
+        
+        /* Vote Badge (Mobile) */
+        .card-vote-badge {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: var(--primary-gradient);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.625rem;
+            font-weight: 600;
+            z-index: 2;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+            display: none; /* Hidden on desktop, shown on mobile */
+        }
+        
+        /* Image Wrapper */
+        .card-image-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* 1:1 Aspect Ratio */
+            overflow: hidden;
+            background: var(--primary-gradient);
+        }
+        
+        .card-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            transition: all 0.3s ease;
+        }
+        
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Hover Overlay (Desktop) */
+        .card-hover-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(2px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        
+        .hover-text {
+            color: white;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .player-card:hover .card-hover-overlay {
+            opacity: 1;
+        }
+        
+        .player-card:hover .card-image {
+            transform: scale(1.05);
+            filter: brightness(0.7);
+        }
+        
+        /* Card Content */
+        .card-content {
+            padding: 0.75rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .card-name {
+            font-size: 0.9375rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0 0 0.5rem 0;
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .card-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--success-green);
+            text-align: center;
+        }
+        
+        /* Pagination */
+        .pagination-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .pagination-btn {
+            padding: 0.5rem 1rem;
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .pagination-btn:hover:not(:disabled) {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+        }
+        
+        .pagination-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .pagination-pages {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .pagination-page {
+            min-width: 40px;
+            height: 40px;
+            padding: 0 0.5rem;
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .pagination-page:hover {
+            background: var(--bg-gray);
+            border-color: #667eea;
+        }
+        
+        .pagination-page.active {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+        }
+        
+        .pagination-ellipsis {
+            padding: 0 0.5rem;
+            color: var(--text-secondary);
+        }
+        
+
+        /* ===== MODAL OVERLAY (GLASS-MORPHISM) ===== */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            max-width: 500px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.1);
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            z-index: 10;
+        }
+
+        .modal-close:hover {
+            background: rgba(0, 0, 0, 0.2);
+            transform: rotate(90deg);
+        }
+
+        .modal-header {
+            padding: 2rem 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .modal-player-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-player-club {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .modal-value-section {
+            padding: 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .modal-value-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-value-amount {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--success-green);
+            line-height: 1;
+        }
+
+        .modal-vote-section {
+            padding: 2rem;
+        }
+
+        .modal-vote-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .modal-vote-input-wrapper {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-vote-input {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            font-size: 1.25rem;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            background: var(--bg-white);
+            color: var(--text-primary);
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .modal-vote-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .modal-vote-button {
+            width: 100%;
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: white;
+            background: var(--primary-gradient);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(102, 126, 234, 0.3);
+        }
+
+        .modal-vote-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px -1px rgba(102, 126, 234, 0.4);
+        }
+
+        .modal-vote-button:active {
+            transform: translateY(0);
+        }
+
+        .modal-history-section {
+            padding: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .modal-history-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .modal-history-chart {
+            height: 200px;
+            background: var(--bg-gray);
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            padding: 1rem;
+            gap: 0.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .modal-history-bar {
+            flex: 1;
+            background: var(--primary-gradient);
+            border-radius: 4px 4px 0 0;
+            min-height: 20px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .modal-history-bar:hover {
+            opacity: 0.8;
+            transform: scaleY(1.05);
+        }
+
+        /* Responsive Modal */
+        @media (max-width: 640px) {
+            .modal-content {
+                max-width: 100%;
+                border-radius: 20px 20px 0 0;
+                max-height: 95vh;
+            }
+
+            .modal-player-name {
+                font-size: 1.5rem;
+            }
+
+            .modal-value-amount {
+                font-size: 2.5rem;
+            }
+
+            .modal-header,
+            .modal-value-section,
+            .modal-vote-section,
+            .modal-history-section {
+                padding: 1.5rem;
+            }
+        }
+
+        /* ===== PLAYER DETAIL VIEW (FULL SCREEN) ===== */
+        #player-detail-view {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--bg-white);
+            z-index: 2000;
+            overflow-y: auto !important;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            height: 100vh;
+            /* Grid styles applied via .detail-main-layout */
+        }
+
+        /* Player List View (Homepage) */
+        #player-list-view {
+            display: block;
+            width: 100%;
+        }
+        
+        #player-detail-view.active {
+            display: block;
+        }
+        
+        /* Wrap detail view in main-container - Center the whole thing */
+        #player-detail-view .main-container {
+            max-width: 1100px !important;
+            margin: 30px auto !important;
+            padding: 0 20px;
+        }
+
+        /* 1. The Main Grid Container (Holds both left and right sides) */
+        /* Target the Grid Parent */
+        #player-detail-view .detail-main-layout,
+        .detail-main-layout {
+            display: grid !important;
+            /* Fixed width left column, flexible right column */
+            grid-template-columns: 360px 1fr !important;
+            gap: 40px !important;
+            /* CRITICAL: 'start' prevents the left column from stretching to match the right's height */
+            align-items: start !important;
+            overflow: visible !important;
+        }
+
+        /* 1. Apply Sticky to the Wrapper (The Aside) */
+        aside.detail-profile-column {
+            display: block !important;
+            position: -webkit-sticky !important;
+            position: sticky !important;
+            top: 20px !important;
+            z-index: 100;
+            align-self: start !important; /* Critical for Grid */
+            height: fit-content !important;
+            overflow: visible !important;
+        }
+
+        /* 2. Reset the Inner Card (Remove Sticky) */
+        .player-profile-card-container,
+        .detail-profile-card {
+            position: static !important; /* No longer sticky */
+            height: auto !important;
+            /* Visuals only */
+            background: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        
+        /* Profile Image - Large Circle with Border */
+        .detail-profile-image {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #e2e8f0;
+            margin: 0 auto 30px;
+            display: block;
+            position: relative;
+            border: 3px solid #e5e7eb;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .detail-profile-image:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16), 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .detail-profile-image-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #94a3b8;
+        }
+
+        .detail-profile-image img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Profile Header - Centered */
+        .detail-profile-header {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .detail-profile-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .detail-profile-club {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        font-size: 18px;
+            color: #64748b;
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        /* Data Table - Left Aligned with Larger Text */
+        .detail-data-table {
+            margin-bottom: 2rem;
+        }
+
+        .data-table-row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 16px;
+            text-align: left;
+        }
+        
+        .data-table-row:last-child {
+            border-bottom: none;
+        }
+        
+        .data-table-icon {
+            font-size: 1.25rem;
+            width: 28px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .data-table-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            min-width: 70px;
+            flex-shrink: 0;
+        }
+        
+        .data-table-value {
+            color: var(--text-primary);
+            font-weight: 500;
+            flex: 1;
+            text-align: left;
+        }
+        
+        /* 3. The Right Content Area */
+        .player-content-container,
+        .detail-content-column {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            overflow: visible;
+        }
+        
+        .player-content-container,
+        .detail-content-card {
+            /* Styling to match the left card */
+            background: #fff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            /* Ensure it takes up remaining space */
+            width: 100%;
+        }
+        
+        /* Market Value Section - Top Aligned */
+        .detail-section-vote {
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Vote Button - Full Width and Prominent */
+        .detail-vote-btn-core {
+            width: 100%;
+            max-width: 400px;
+            padding: 1rem;
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+        
+        .detail-vote-btn-core:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* 1. Header (Compact) */
+        .detail-header-compact {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 0.75rem 1rem 0.875rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: var(--shadow-md);
+        }
+
+        .detail-header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .detail-back-btn,
+        .detail-share-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 0.5rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .detail-back-btn:hover,
+        .detail-share-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .detail-share-btn {
+            font-size: 1.25rem;
+            padding: 0.5rem;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .detail-header-info {
+            text-align: left;
+        }
+
+        .detail-name-row {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .detail-name-section {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .detail-player-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.375rem;
+        }
+
+        /* Player Avatar */
+        .detail-player-avatar {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .detail-avatar-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .detail-player-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .detail-club-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            opacity: 0.95;
+            flex-shrink: 0;
+        }
+
+        .detail-club-logo {
+            font-size: 1rem;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .detail-club-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        .detail-club-name {
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        /* Badges Grid */
+        .detail-badges-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.375rem;
+            margin-top: 0.5rem;
+        }
+
+        .detail-badge-pill {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 0.375rem 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: white;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .detail-badge-pill:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .detail-badge-icon {
+            font-size: 0.875rem;
+            flex-shrink: 0;
+        }
+
+        .detail-badge-text {
+            flex: 1;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .detail-badge-pill.hidden {
+            display: none;
+        }
+
+        /* Scrollable Content */
+
+        /* 2. Core Action (Vote) */
+        .detail-section-vote {
+            margin-bottom: 2rem;
+        }
+
+        .detail-current-value {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-value-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-value-huge {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--success-green);
+            line-height: 1;
+        }
+
+        .detail-value-live-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+            font-style: italic;
+            opacity: 0.8;
+            text-align: center;
+        }
+
+        .detail-vote-form-core {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .detail-vote-input-core {
+            width: 100%;
+            max-width: 400px;
+            padding: 1rem;
+            font-size: 1.125rem;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            background: var(--bg-white);
+            color: var(--text-primary);
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .detail-vote-input-core:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .detail-vote-btn-core {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: white;
+            background: var(--primary-gradient);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(102, 126, 234, 0.3);
+        }
+
+        .detail-vote-btn-core:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px -1px rgba(102, 126, 234, 0.4);
+        }
+
+        .detail-vote-btn-core:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* 3. Context (Reason) */
+        .detail-section-reason {
+            margin-bottom: 2rem;
+        }
+
+        .detail-reason-textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 0.875rem 1rem;
+            font-size: 0.9375rem;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            background: var(--bg-white);
+            color: var(--text-primary);
+            font-family: inherit;
+            resize: vertical;
+            min-height: 80px;
+            transition: all 0.2s ease;
+        }
+
+        .detail-reason-textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        /* 3.5. Market Analysis & Scouting Report */
+        .detail-section-analysis {
+            margin-bottom: 2rem;
+            background: #fffbeb;
+            border: 1px solid #fcd34d;
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .detail-section-analysis .detail-section-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .detail-section-icon {
+            font-size: 1.25rem;
+        }
+
+        .detail-analysis-content {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-style: italic;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+            white-space: pre-line; /* Preserve line breaks */
+        }
+
+        /* 4. Trend Analysis */
+        .detail-section-trend {
+            margin-bottom: 2rem;
+        }
+
+        .detail-section-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .detail-chart-container {
+            width: 100%;
+            height: 200px;
+            background: var(--bg-gray);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .detail-chart-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* 5. Media (Highlights) */
+        .detail-section-media {
+            margin-bottom: 2rem;
+        }
+
+        .detail-highlights-iframe {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #1a1a1a;
+            position: relative;
+        }
+
+        .detail-highlights-iframe iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .detail-iframe-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .detail-iframe-placeholder:hover {
+            background: #2a2a2a;
+        }
+
+        .detail-iframe-placeholder.hidden {
+            display: none;
+        }
+
+        .detail-play-icon {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .detail-play-label {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        /* 6. Community (Comments) */
+        .detail-section-comments {
+            margin-bottom: 0;
+        }
+
+        .detail-comments-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .detail-comments-tabs {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .detail-tab-btn {
+            background: var(--bg-gray);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .detail-tab-btn.active {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+        }
+
+        .detail-tab-btn:hover:not(.active) {
+            background: #f3f4f6;
+        }
+
+        .detail-collapse-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.25rem;
+            cursor: pointer;
+            padding: 0.25rem;
+            transition: transform 0.3s ease;
+        }
+
+        .detail-collapse-btn.collapsed .collapse-icon {
+            transform: rotate(-90deg);
+        }
+
+        .detail-comments-content {
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            overflow: hidden;
+            max-height: 5000px;
+        }
+
+        .detail-comments-content.collapsed {
+            max-height: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Comment Input Section */
+        .detail-comment-input-section {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .detail-comment-input-wrapper {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .detail-comment-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            font-size: 0.9375rem;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            background: var(--bg-white);
+            color: var(--text-primary);
+            font-family: inherit;
+            transition: all 0.2s ease;
+        }
+
+        .detail-comment-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .detail-comment-post-btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: white;
+            background: var(--primary-gradient);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .detail-comment-post-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .detail-comment-post-btn:active {
+            transform: translateY(0);
+        }
+
+        .detail-comment-post-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .detail-comments-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .detail-comment-item {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .detail-comment-item:last-child {
+            border-bottom: none;
+        }
+
+        .detail-comment-header-row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-comment-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 0.875rem;
+            flex-shrink: 0;
+        }
+
+        .detail-comment-user-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .detail-comment-username {
+            font-weight: 700;
+            color: var(--text-primary);
+            font-size: 0.9375rem;
+            margin-bottom: 0.125rem;
+        }
+
+        .detail-comment-rating-badge {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--success-green);
+            padding: 0.125rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .detail-comment-text {
+            color: var(--text-primary);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+            margin-left: 52px;
+        }
+
+        .detail-comment-actions {
+            display: flex;
+            gap: 1rem;
+            margin-left: 52px;
+        }
+
+        .detail-comment-action-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .detail-comment-action-btn:hover {
+            background: var(--bg-gray);
+            color: var(--text-primary);
+        }
+
+        .detail-comments-empty {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        /* Hide main container when detail view is active */
+        body.detail-view-active .container {
+            display: none;
+        }
+
+        /* 3. Mobile Reset (Disable Sticky on Small Screens) */
+        @media (max-width: 768px) {
+            #player-detail-view .detail-main-layout,
+            .detail-main-layout {
+                grid-template-columns: 1fr !important; /* Stack them */
+            }
+            
+            aside.detail-profile-column {
+                position: static !important;
+                width: 100% !important;
+            }
+            
+            .detail-profile-card {
+                padding: 30px;
+            }
+            
+            .detail-content-card {
+                padding: 30px;
+            }
+            
+            .main-container {
+                padding: 10px;
+            }
+            
+            #player-detail-view .main-container {
+                padding: 10px;
+            }
+            
+            .detail-profile-name {
+                font-size: 24px;
+            }
+            
+            .detail-profile-club {
+                font-size: 16px;
+            }
+            
+            .data-table-row {
+                font-size: 14px;
+                padding: 0.75rem 0;
+            }
+        }
+        
+        @media (min-width: 640px) {
+            .detail-profile-name {
+                font-size: 1.25rem;
+            }
+            
+            .detail-profile-image {
+                max-width: 200px;
+                margin: 0 auto 1rem;
+            }
+            
+            .detail-data-table {
+                font-size: 0.75rem;
+            }
+            
+            .data-table-row {
+                padding: 0.5rem 0;
+            }
+
+            .detail-value-huge {
+                font-size: 4rem;
+            }
+
+            .detail-content-column {
+                padding: 1rem;
+            }
+
+            .detail-badges-grid {
+                gap: 0.5rem;
+            }
+
+            .detail-badge-pill {
+                font-size: 0.8125rem;
+                padding: 0.4375rem 0.875rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .detail-profile-column {
+                max-width: 360px;
+            }
+            
+            .detail-content-column {
+                padding: 2rem;
+            }
+        }
+        
+        /* ===== STICKY SIDEBAR FIX: Unblock Parent Overflows ===== */
+        /* 🔓 Unblock the Parents (Crucial Step) */
+        /* Override any conflicting rules - ensure scrolling works */
+        /* 1. UNLOCK SCROLLING (Global) */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;           /* Allow growth */
+            height: auto !important;     /* ❌ DELETE '100vh' */
+            overflow-y: auto !important; /* ✅ Force Scrollbar */
+            overflow-x: hidden;
+            background-color: #f1f5f9;
+        }
+        
+        /* Additional overflow fixes to ensure sticky works */
+        .main-container, .container, #app {
+            overflow: visible !important; /* ⚠️ This is the key fixer! */
+        }
+        
+        /* Ensure detail view container allows scrolling */
+        #player-detail-view {
+            overflow-y: auto !important; /* Allow vertical scroll */
+            overflow-x: hidden !important; /* Prevent horizontal scroll */
+        }
+        
+        #player-detail-view .main-container {
+            overflow: visible !important;
+        }
+        
+        /* Ensure the grid container allows sticky to work */
+        .detail-main-layout {
+            overflow: visible !important;
+        }
+        
+        /* NUCLEAR OPTION for Ancestors - Remove any potential scroll locks on parents */
+        /* Let the browser handle scroll properly for sticky positioning */
+        /* Only override containers that are NOT the scrolling context */
+        #player-detail-view .main-container,
+        .main-container {
+            overflow: visible !important; /* Don't clip sticky children */
+            height: auto !important;
+        }
+        
+        /* Ensure body/html allow scrolling when detail view is NOT active */
+        body:not(:has(#player-detail-view[style*="display: block"])) {
+            overflow-y: auto !important;
+        }
+        
+        /* Ensure detail view itself allows proper scrolling context */
+        /* This is the scrolling container for sticky - must have overflow */
+        #player-detail-view {
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            /* Keep the scrolling context but ensure children can be sticky */
+            position: fixed !important; /* Keep fixed positioning */
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <!-- ===== PLAYER LIST VIEW (HOMEPAGE) ===== -->
+        <div id="player-list-view">
+            <div class="main-container">
+                <!-- Hero Section -->
+                <div class="hero-section">
+                    <h1>Football Player Valuation Exchange</h1>
+                    <p class="hero-subtitle">Discover & Vote for the World's Best</p>
+                </div>
+
+                <section style="text-align: center; padding: 2rem 1rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); margin-bottom: 1.5rem; border-bottom: 1px solid #dee2e6;">
+                    <h1 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #1a1a1a;">🏆 The People's Valuation</h1>
+                    <p style="font-size: 1rem; color: #666; max-width: 600px; margin: 0 auto; line-height: 1.5;">
+                        Stop relying on editors. <strong>YOU</strong> decide the real market value.
+                        <br>Vote on players, settle debates, and see the live fan consensus.
+                    </p>
+                </section>
+
+                <main>
+                <section class="search-section">
+                    <div class="search-wrapper">
+                        <label for="player-search" class="search-label">Search Player</label>
+                        <input type="text" id="player-search" class="search-input" placeholder="🔍 Search players (e.g. Mbappe)..." autocomplete="off">
+                    </div>
+                </section>
+
+                <section class="ranking-section">
+                    <div class="ranking-header">
+                        <h2 class="ranking-title">Global Ranking</h2>
+                        <p class="ranking-subtitle">Top Players by Market Value</p>
+                    </div>
+                    
+                    <div class="ranking-wrapper">
+                        <div id="ranking-list" class="ranking-list">
+                            <p class="loading-spinner">🔄 Connecting to Cloud Database...</p>
+                        </div>
+                    </div>
+                    <!-- Pagination Controls - Outside ranking-wrapper to prevent deletion -->
+                    <div class="pagination-container" id="pagination-container" style="display: none;">
+                        <button class="pagination-btn" id="pagination-prev" onclick="goToPage(currentPage - 1)" disabled>← Prev</button>
+                        <div class="pagination-pages" id="pagination-pages"></div>
+                        <button class="pagination-btn" id="pagination-next" onclick="goToPage(currentPage + 1)">Next →</button>
+                    </div>
+                </section>
+            </main>
+            </div>
+
+            <footer class="page-footer">
+                <p class="footer-text"><strong>Status:</strong> <span id="connection-status">Connecting...</span></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- ===== PLAYER DETAIL MODAL ===== -->
+    <div id="player-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            
+            <div class="modal-header">
+                <h2 class="modal-player-name" id="modal-player-name">Player Name</h2>
+                <p class="modal-player-club" id="modal-player-club">Club Name</p>
+            </div>
+
+            <div class="modal-value-section">
+                <div class="modal-value-label">Current Market Value</div>
+                <div class="modal-value-amount" id="modal-value-amount">€0M</div>
+            </div>
+
+            <div class="modal-vote-section">
+                <h3 class="modal-vote-title">Submit Your Valuation</h3>
+                <div class="modal-vote-input-wrapper">
+                    <input 
+                        type="number" 
+                        id="modal-vote-input" 
+                        class="modal-vote-input" 
+                        placeholder="Enter value in M€ (e.g. 180)"
+                        min="0"
+                        step="1"
+                    >
+                </div>
+                <button class="modal-vote-button" onclick="handleVoteSubmit()">
+                    ✨ Submit My Valuation
+                </button>
+            </div>
+
+            <div class="modal-history-section">
+                <h3 class="modal-history-title">Price History (Last 7 Days)</h3>
+                <div class="modal-history-chart" id="modal-history-chart">
+                    <!-- Chart bars will be generated dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PLAYER DETAIL VIEW (FULL SCREEN) ===== -->
+    <div id="player-detail-view" style="display: none;">
+        <!-- Header Bar (Sticky) -->
+        <div class="detail-header-bar">
+            <div class="main-container" style="display: flex; justify-content: space-between; align-items: center;">
+                <button class="detail-back-btn" onclick="showHome()">← Back to List</button>
+                <button class="detail-share-btn" onclick="sharePlayer()" title="Share">🔗</button>
+            </div>
+        </div>
+
+        <!-- Main Content: 2-Column Layout -->
+        <div class="main-container">
+            <div class="detail-main-layout">
+            <!-- Left Column: Sticky Profile (30%) -->
+            <aside class="detail-profile-column">
+                <div class="detail-profile-card">
+                    <!-- Player Image -->
+                    <div class="detail-profile-image" id="detail-profile-image">
+                        <div class="detail-profile-image-placeholder">⚽</div>
+                    </div>
+                    
+                    <!-- Player Name & Club -->
+                    <div class="detail-profile-header">
+                        <h1 class="detail-profile-name" id="detail-profile-name">Player Name</h1>
+                        <div class="detail-profile-club" id="detail-profile-club">
+                            <span class="detail-profile-club-logo" id="detail-profile-club-logo">⚽</span>
+                            <span class="detail-profile-club-name" id="detail-profile-club-name">Club Name</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Data Table -->
+                    <div class="detail-data-table">
+                        <div class="data-table-row">
+                            <span class="data-table-icon">🎂</span>
+                            <span class="data-table-label">Born:</span>
+                            <span class="data-table-value" id="detail-birth-date">-</span>
+                        </div>
+                        <div class="data-table-row">
+                            <span class="data-table-icon">🦶</span>
+                            <span class="data-table-label">Foot:</span>
+                            <span class="data-table-value" id="detail-preferred-foot">-</span>
+                        </div>
+                        <div class="data-table-row">
+                            <span class="data-table-icon">📍</span>
+                            <span class="data-table-label">Pos:</span>
+                            <span class="data-table-value" id="detail-position">-</span>
+                        </div>
+                        <div class="data-table-row">
+                            <span class="data-table-icon">👕</span>
+                            <span class="data-table-label">Num:</span>
+                            <span class="data-table-value" id="detail-jersey-number">-</span>
+                        </div>
+                        <div class="data-table-row">
+                            <span class="data-table-icon">🌍</span>
+                            <span class="data-table-label">Nat:</span>
+                            <span class="data-table-value" id="detail-nationality">-</span>
+                        </div>
+                        <div class="data-table-row">
+                            <span class="data-table-icon">📝</span>
+                            <span class="data-table-label">Contract:</span>
+                            <span class="data-table-value" id="detail-contract-expires">-</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Honors Section -->
+                    <div class="detail-profile-section">
+                        <h3 class="detail-section-heading">🏆 Honors</h3>
+                        <div class="detail-section-content" id="detail-honors">
+                            <p class="detail-text-placeholder">No honors data available</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Career Section -->
+                    <div class="detail-profile-section">
+                        <h3 class="detail-section-heading">📊 Career</h3>
+                        <div class="detail-section-content" id="detail-career">
+                            <p class="detail-text-placeholder">No career data available</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right Column: Scrollable Content (70%) -->
+            <main class="detail-content-column">
+                <div class="detail-content-card">
+            <!-- 2. Core Action (The Vote) -->
+            <div class="detail-section-vote">
+                <div class="detail-current-value">
+                    <div class="detail-value-label">Current Market Value</div>
+                    <div class="detail-value-huge" id="detail-value-huge">€180M</div>
+                    <div class="detail-value-live-label" id="detail-value-live-label" style="display: none;">(Live Weighted Rating)</div>
+                </div>
+                <form class="detail-vote-form-core" onsubmit="handleDetailVoteSubmit(event)">
+                    <input 
+                        type="number" 
+                        id="detail-vote-input" 
+                        class="detail-vote-input-core" 
+                        placeholder="Your Valuation (€M)"
+                        min="0"
+                        step="1"
+                        required
+                    >
+                    <button type="submit" class="detail-vote-btn-core" id="detail-vote-button">
+                        Submit Vote
+                    </button>
+                </form>
+            </div>
+
+            <!-- 3. Context (Optional Reason) -->
+            <div class="detail-section-reason">
+                <textarea 
+                    id="detail-vote-reason" 
+                    class="detail-reason-textarea" 
+                    placeholder="Why? (Optional review)&#10;He scored a hat-trick...&#10;Too old..."
+                    rows="3"
+                ></textarea>
+            </div>
+
+            <!-- 3.5. Market Analysis & Scouting Report -->
+            <div class="detail-section-analysis" id="detail-section-analysis" style="display: none;">
+                <h2 class="detail-section-title">
+                    <span class="detail-section-icon">📝</span>
+                    Market Analysis & Scouting Report
+                </h2>
+                <div class="detail-analysis-content" id="detail-analysis-content">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- 4. Trend Analysis (The Chart) -->
+            <div class="detail-section-trend">
+                <h2 class="detail-section-title">Price Trend (Last 6 Months)</h2>
+                <div class="detail-chart-container" id="detail-chart-container">
+                    <svg class="detail-chart-svg" viewBox="0 0 400 200" preserveAspectRatio="none">
+                        <!-- Grid lines -->
+                        <line x1="0" y1="40" x2="400" y2="40" stroke="#e5e7eb" stroke-width="1"/>
+                        <line x1="0" y1="100" x2="400" y2="100" stroke="#e5e7eb" stroke-width="1"/>
+                        <line x1="0" y1="160" x2="400" y2="160" stroke="#e5e7eb" stroke-width="1"/>
+                        <!-- Trend line (dummy jagged line) -->
+                        <polyline 
+                            points="20,150 60,140 100,120 140,100 180,90 220,110 260,130 300,100 340,80 380,70" 
+                            fill="none" 
+                            stroke="#667eea" 
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <!-- Data points -->
+                        <circle cx="20" cy="150" r="4" fill="#667eea"/>
+                        <circle cx="60" cy="140" r="4" fill="#667eea"/>
+                        <circle cx="100" cy="120" r="4" fill="#667eea"/>
+                        <circle cx="140" cy="100" r="4" fill="#667eea"/>
+                        <circle cx="180" cy="90" r="4" fill="#667eea"/>
+                        <circle cx="220" cy="110" r="4" fill="#667eea"/>
+                        <circle cx="260" cy="130" r="4" fill="#667eea"/>
+                        <circle cx="300" cy="100" r="4" fill="#667eea"/>
+                        <circle cx="340" cy="80" r="4" fill="#667eea"/>
+                        <circle cx="380" cy="70" r="4" fill="#667eea"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- 5. Media (Highlights) -->
+            <div class="detail-section-media" id="detail-section-media">
+                <h2 class="detail-section-title">Highlights</h2>
+                <div class="detail-highlights-iframe" id="detail-highlights-container">
+                    <div class="detail-iframe-placeholder" id="detail-iframe-placeholder">
+                        <div class="detail-play-icon">▶</div>
+                        <div class="detail-play-label">YouTube Highlights</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Community (Comments) -->
+            <div class="detail-section-comments">
+                <div class="detail-comments-header">
+                    <div class="detail-comments-tabs">
+                        <button class="detail-tab-btn active" data-sort="hot" onclick="switchCommentSort('hot')">🔥 Hot</button>
+                        <button class="detail-tab-btn" data-sort="newest" onclick="switchCommentSort('newest')">🕒 Newest</button>
+                    </div>
+                    <button class="detail-collapse-btn" onclick="toggleCommentsSection()" id="detail-collapse-btn">
+                        <span class="collapse-icon">▼</span>
+                    </button>
+                </div>
+                <div class="detail-comments-content" id="detail-comments-content">
+                    <!-- Comment Input Section -->
+                    <div class="detail-comment-input-section">
+                        <div class="detail-comment-input-wrapper">
+                            <input 
+                                type="text" 
+                                id="detail-comment-input" 
+                                class="detail-comment-input" 
+                                placeholder="Join the discussion..."
+                                maxlength="500"
+                            >
+                            <button 
+                                class="detail-comment-post-btn" 
+                                onclick="submitComment()"
+                                id="detail-comment-post-btn"
+                            >
+                                Post
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detail-comments-list" id="detail-comments-list">
+                        <!-- Comments will be populated dynamically -->
+                    </div>
+                </div>
+            </div>
+                </div>
+            </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+   <script>
+        // ==========================================
+        // 🔴 请在这里填入您的 SUPABASE 密钥 🔴
+        // ==========================================
+        const SUPABASE_URL = 'https://vmkmevpvndxpbtxmfgxt.supabase.co';
+        const SUPABASE_KEY = 'sb_publishable_A2wzV7R8E1jXVEH3X0CL-g_J3P_DImf';
+        // ==========================================
+
+        // 初始化客户端
+        // 注意：这里我们使用 window.supabase，这是 CDN 注入的全局变量
+        const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+        // DOM 元素
+        const listContainer = document.getElementById('ranking-list');
+        const statusSpan = document.getElementById('connection-status');
+        const searchInput = document.getElementById('player-search');
+        const modal = document.getElementById('player-modal');
+        const detailView = document.getElementById('player-detail-view');
+        
+        // 存储当前玩家列表（用于模态框和详情页）
+        let currentPlayersList = [];
+        let currentModalPlayerId = null;
+        let currentDetailPlayer = null;
+        
+        // 分页状态
+        let allPlayersData = []; // 存储所有玩家数据
+        let currentPage = 1; // 当前页码
+        const playersPerPage = 20; // 每页显示数量
+        let isSearchMode = false; // 搜索模式标志
+
+        // 主函数：加载排行榜
+        async function loadRankings() {
+            try {
+                console.log("正在从 Supabase 获取数据...");
+                
+                // 并行获取 players 和 ratings 数据
+                const [playersResult, ratingsResult] = await Promise.all([
+                    client.from('players').select('*'),
+                    client.from('ratings').select('*')
+                ]);
+
+                if (playersResult.error) throw playersResult.error;
+                if (ratingsResult.error) throw ratingsResult.error;
+
+                const players = playersResult.data || [];
+                const ratings = ratingsResult.data || [];
+
+                console.log("获取成功:", { players: players.length, ratings: ratings.length });
+
+                // 计算每个玩家的共识价格
+                const playersWithConsensus = players.map(player => {
+                    // 找到该玩家的所有评分
+                    const playerRatings = ratings.filter(r => 
+                        r.player_id === player.id || r.player_id === player.player_id
+                    );
+
+                    let consensusValue = player.base_value || 0;
+                    let voteCount = 0;
+
+                    if (playerRatings.length > 0) {
+                        // 计算平均值
+                        const sum = playerRatings.reduce((acc, r) => acc + (r.user_rating || 0), 0);
+                        consensusValue = sum / playerRatings.length;
+                        voteCount = playerRatings.length;
+                    }
+
+                    return {
+                        ...player,
+                        consensusValue: Math.round(consensusValue * 10) / 10, // 保留1位小数
+                        voteCount: voteCount,
+                        hasVotes: voteCount > 0
+                    };
+                });
+
+                // 按共识价格降序排序
+                playersWithConsensus.sort((a, b) => b.consensusValue - a.consensusValue);
+
+                console.log("计算完成，共识价格:", playersWithConsensus.map(p => ({
+                    name: p.name,
+                    consensusValue: p.consensusValue,
+                    votes: p.voteCount
+                })));
+
+                // 存储所有玩家数据
+                allPlayersData = playersWithConsensus;
+                currentPage = 1; // 重置到第一页
+                isSearchMode = false; // 退出搜索模式
+
+                statusSpan.textContent = "Connected & Data Loaded ✅";
+                statusSpan.style.color = "green";
+
+                renderList();
+
+            } catch (err) {
+                console.error("加载失败:", err);
+                listContainer.innerHTML = `<p class="error-msg">❌ Error loading data: ${err.message}. <br>Please check your API Keys in the code.</p>`;
+                statusSpan.textContent = "Connection Failed ❌";
+                statusSpan.style.color = "red";
+            }
+        }
+
+        // 渲染函数（传统列表布局 + 分页）
+        function renderList() {
+            const players = allPlayersData;
+            
+            if (!players || players.length === 0) {
+                // Differentiate between empty search and empty database
+                if (isSearchMode) {
+                    listContainer.innerHTML = '<p class="empty-state">🔍 Player not found in database.<br>Try searching with a different name.</p>';
+                } else {
+                    listContainer.innerHTML = '<p class="empty-state">📭 Database is empty. Please run "seedPlayers()" in console.</p>';
+                }
+                currentPlayersList = [];
+                const paginationContainer = document.getElementById('pagination-container');
+                if (paginationContainer) paginationContainer.style.display = 'none';
+                return;
+            }
+
+            let playersToShow;
+            let totalPages = 0;
+            let startIndex = 0;
+            const paginationContainer = document.getElementById('pagination-container');
+
+            if (isSearchMode) {
+                // 搜索模式：显示前50个结果，不分页
+                playersToShow = players.slice(0, 50);
+                startIndex = 0; // 搜索模式下从0开始
+                if (paginationContainer) paginationContainer.style.display = 'none';
+            } else {
+                // 正常模式：使用分页
+                totalPages = Math.ceil(players.length / playersPerPage);
+                startIndex = (currentPage - 1) * playersPerPage;
+                const endIndex = startIndex + playersPerPage;
+                playersToShow = players.slice(startIndex, endIndex);
+                
+                // 更新分页UI
+                updatePagination(totalPages);
+            }
+            
+            // 存储玩家列表供详情页使用（使用完整列表，不是分页后的）
+            currentPlayersList = players;
+
+            // Generate leaderboard list
+            let html = '<div class="leaderboard-list">';
+            
+            playersToShow.forEach((player, localIndex) => {
+                const name = player.name || 'Unknown';
+                const club = player.team || player.club || 'Unknown Club';
+                const value = player.consensusValue !== undefined ? player.consensusValue : (player.base_value || 0);
+                // Use DiceBear API for copyright-safe avatars
+                const avatarUrl = `https://api.dicebear.com/9.x/initials/svg?seed=${encodeURIComponent(name)}&backgroundColor=1e3a8a,3b82f6,10b981&textColor=ffffff`;
+                // 在搜索模式下，globalIndex就是localIndex（因为显示的是前50个）
+                // 在正常模式下，globalIndex = startIndex + localIndex
+                const globalIndex = isSearchMode ? localIndex : (startIndex + localIndex);
+                const rank = globalIndex + 1;
+                
+                // Determine rank class for top 3
+                let rankClass = '';
+                if (rank === 1) {
+                    rankClass = 'rank-1';
+                } else if (rank === 2) {
+                    rankClass = 'rank-2';
+                } else if (rank === 3) {
+                    rankClass = 'rank-3';
+                }
+                
+                html += `
+                    <div class="leaderboard-item ${rankClass}">
+                        <div class="leaderboard-item-left" onclick="openPlayerDetail(${globalIndex})">
+                            <div class="leaderboard-rank">${rank === 1 ? '👑' : ''} ${rank}</div>
+                            <div class="leaderboard-avatar">
+                                <img src="${avatarUrl}" alt="${name}">
+                            </div>
+                            <div class="leaderboard-info">
+                                <span class="leaderboard-name">${name}</span>
+                                <span class="leaderboard-club">${club}</span>
+                            </div>
+                            <div class="leaderboard-value">€${value.toFixed(1)}M</div>
+                        </div>
+                        <button class="leaderboard-rate-btn" onclick="event.stopPropagation(); openPlayerDetail(${globalIndex});">
+                            Rate Now
+                        </button>
+                    </div>
+                `;
+            });
+            
+            html += '</div>';
+            
+            listContainer.innerHTML = html;
+        }
+        
+        // 更新分页UI
+        function updatePagination(totalPages) {
+            const paginationContainer = document.getElementById('pagination-container');
+            const paginationPages = document.getElementById('pagination-pages');
+            const prevBtn = document.getElementById('pagination-prev');
+            const nextBtn = document.getElementById('pagination-next');
+            
+            if (!paginationContainer) {
+                console.warn('Pagination container not found');
+                return;
+            }
+            
+            if (totalPages <= 1) {
+                paginationContainer.style.display = 'none';
+                return;
+            }
+            
+            paginationContainer.style.display = 'flex';
+            
+            // Prev button
+            prevBtn.disabled = currentPage === 1;
+            
+            // Page numbers
+            let pagesHtml = '';
+            const maxVisiblePages = 5;
+            let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+            let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+            
+            if (endPage - startPage < maxVisiblePages - 1) {
+                startPage = Math.max(1, endPage - maxVisiblePages + 1);
+            }
+            
+            if (startPage > 1) {
+                pagesHtml += `<button class="pagination-page" onclick="goToPage(1)">1</button>`;
+                if (startPage > 2) {
+                    pagesHtml += `<span class="pagination-ellipsis">...</span>`;
+                }
+            }
+            
+            for (let i = startPage; i <= endPage; i++) {
+                pagesHtml += `<button class="pagination-page ${i === currentPage ? 'active' : ''}" onclick="goToPage(${i})">${i}</button>`;
+            }
+            
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    pagesHtml += `<span class="pagination-ellipsis">...</span>`;
+                }
+                pagesHtml += `<button class="pagination-page" onclick="goToPage(${totalPages})">${totalPages}</button>`;
+            }
+            
+            paginationPages.innerHTML = pagesHtml;
+            
+            // Next button
+            nextBtn.disabled = currentPage === totalPages;
+        }
+        
+        // 跳转到指定页面
+        function goToPage(page) {
+            const totalPages = Math.ceil(allPlayersData.length / playersPerPage);
+            if (page < 1 || page > totalPages) return;
+            
+            currentPage = page;
+            renderList();
+            
+            // 滚动到顶部
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // 简单的搜索功能
+        searchInput.addEventListener('input', async (e) => {
+            const query = e.target.value.trim();
+            
+            if (query.length === 0) {
+                // 搜索为空时退出搜索模式并恢复完整列表
+                isSearchMode = false;
+                loadRankings();
+                return;
+            }
+
+            // 进入搜索模式
+            isSearchMode = true;
+
+            try {
+                // 并行获取 players 和 ratings 数据
+                const [playersResult, ratingsResult] = await Promise.all([
+                    client.from('players').select('*').ilike('name', `%${query}%`),
+                    client.from('ratings').select('*')
+                ]);
+
+                if (playersResult.error) throw playersResult.error;
+                if (ratingsResult.error) throw ratingsResult.error;
+
+                const players = playersResult.data || [];
+                const ratings = ratingsResult.data || [];
+
+                // 计算每个玩家的共识价格
+                const playersWithConsensus = players.map(player => {
+                    const playerRatings = ratings.filter(r => 
+                        r.player_id === player.id || r.player_id === player.player_id
+                    );
+
+                    let consensusValue = player.base_value || 0;
+                    let voteCount = 0;
+
+                    if (playerRatings.length > 0) {
+                        const sum = playerRatings.reduce((acc, r) => acc + (r.user_rating || 0), 0);
+                        consensusValue = sum / playerRatings.length;
+                        voteCount = playerRatings.length;
+                    }
+
+                    return {
+                        ...player,
+                        consensusValue: Math.round(consensusValue * 10) / 10,
+                        voteCount: voteCount,
+                        hasVotes: voteCount > 0
+                    };
+                });
+
+                // 按共识价格降序排序
+                playersWithConsensus.sort((a, b) => b.consensusValue - a.consensusValue);
+
+                // 存储搜索结果并渲染（搜索模式显示前50个结果，不分页）
+                allPlayersData = playersWithConsensus;
+                currentPage = 1;
+                renderList();
+            } catch (err) {
+                console.error('Search error:', err);
+                listContainer.innerHTML = `<p class="error-msg">❌ Search error: ${err.message}</p>`;
+            }
+        });
+
+        // ===== MODAL FUNCTIONS =====
+        
+        // 打开模态框
+        function openModal(playerIndex) {
+            if (!currentPlayersList || !currentPlayersList[playerIndex]) {
+                console.error('Player not found at index:', playerIndex);
+                return;
+            }
+
+            const player = currentPlayersList[playerIndex];
+            currentModalPlayerId = player.id || player.player_id || player.playerId || null;
+            
+            // 使用共识价格（如果有投票）或基础价格
+            const displayValue = player.consensusValue !== undefined ? player.consensusValue : (player.base_value || 0);
+            
+            // 填充模态框数据
+            document.getElementById('modal-player-name').textContent = player.name || 'Unknown';
+            document.getElementById('modal-player-club').textContent = player.team || player.club || 'Unknown Club';
+            document.getElementById('modal-value-amount').textContent = `€${displayValue.toFixed(1)}M`;
+            
+            // 重置投票输入
+            document.getElementById('modal-vote-input').value = '';
+            
+            // 生成价格历史图表
+            generatePriceHistoryChart(displayValue);
+            
+            // 显示模态框
+            modal.classList.add('active');
+            
+            // 阻止背景滚动
+            document.body.style.overflow = 'hidden';
+        }
+
+        // 关闭模态框
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // 点击背景关闭模态框
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // ESC 键关闭模态框
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+            if (e.key === 'Escape' && detailView.classList.contains('active')) {
+                closePlayerDetail();
+            }
+        });
+
+        // ===== PLAYER DETAIL VIEW FUNCTIONS =====
+        
+        // 打开球员详情页
+        async function openPlayerDetail(playerIndex) {
+            if (!currentPlayersList || !currentPlayersList[playerIndex]) {
+                console.error('Player not found at index:', playerIndex);
+                return;
+            }
+
+            const player = currentPlayersList[playerIndex];
+            currentDetailPlayer = player;
+            currentModalPlayerId = player.id || player.player_id || player.playerId || null;
+            
+            // 使用共识价格（如果有投票）或基础价格
+            const displayValue = player.consensusValue !== undefined ? player.consensusValue : (player.base_value || 0);
+            
+            // 填充详情页数据 - 新结构（左侧栏）
+            document.getElementById('detail-profile-name').textContent = player.name || 'Unknown';
+            
+            // 填充俱乐部信息
+            const clubName = player.team || player.club || 'Unknown Club';
+            document.getElementById('detail-profile-club-name').textContent = clubName;
+            
+            // 填充俱乐部 Logo（如果有）
+            const clubLogoEl = document.getElementById('detail-profile-club-logo');
+            const logoUrl = player.club_logo || player.club_logo_url || null;
+            if (logoUrl && logoUrl.trim() !== '') {
+                clubLogoEl.innerHTML = `<img src="${logoUrl}" alt="${clubName}" onerror="this.parentElement.innerHTML='⚽'">`;
+            } else {
+                clubLogoEl.innerHTML = '⚽';
+            }
+            
+            // 填充球员头像 - 使用 DiceBear API 生成版权安全的头像 (详情页使用专业 initials 风格)
+            const avatarUrl = `https://api.dicebear.com/9.x/initials/svg?seed=${encodeURIComponent(player.name)}`;
+            document.getElementById('detail-profile-image').innerHTML = `<img src="${avatarUrl}" alt="${player.name}">`;
+            
+            // 填充数据表 - 使用新的数据库字段映射
+            // Born: 使用 player.born (年份，如 "2007")
+            const bornYear = player.born || player.birth_date || player.birth_year || null;
+            document.getElementById('detail-birth-date').textContent = bornYear ? (typeof bornYear === 'string' && bornYear.length > 4 ? formatDate(bornYear) : bornYear) : '-';
+            
+            // Foot: 使用 player.foot，格式化显示 "Left" 或 "Right"
+            let footDisplay = player.foot || player.preferred_foot || null;
+            if (footDisplay) {
+                const footLower = footDisplay.toString().toLowerCase().trim();
+                if (footLower === 'l' || footLower === 'left') {
+                    footDisplay = 'Left';
+                } else if (footLower === 'r' || footLower === 'right') {
+                    footDisplay = 'Right';
+                } else {
+                    footDisplay = footDisplay.charAt(0).toUpperCase() + footDisplay.slice(1).toLowerCase();
+                }
+            }
+            document.getElementById('detail-preferred-foot').textContent = footDisplay || '-';
+            
+            document.getElementById('detail-position').textContent = player.position || '-';
+            
+            // Map jersey_number from database (Num field)
+            let jerseyNum = '-';
+            if (player.jersey_number !== null && player.jersey_number !== undefined && player.jersey_number !== '') {
+                jerseyNum = String(player.jersey_number);
+            } else if (player.number !== null && player.number !== undefined && player.number !== '') {
+                jerseyNum = String(player.number);
+            }
+            document.getElementById('detail-jersey-number').textContent = jerseyNum;
+            
+            // Map nationality from database (Nat field)
+            let nationality = '-';
+            if (player.nationality && typeof player.nationality === 'string' && player.nationality.trim() !== '') {
+                nationality = player.nationality.trim();
+            }
+            document.getElementById('detail-nationality').textContent = nationality;
+            
+            document.getElementById('detail-contract-expires').textContent = formatDate(player.contract_expires) || '-';
+            
+            // 填充荣誉和职业生涯
+            const honorsEl = document.getElementById('detail-honors');
+            if (player.honors && player.honors.trim() !== '') {
+                honorsEl.innerHTML = `<p>${player.honors}</p>`;
+            } else {
+                honorsEl.innerHTML = '<p class="detail-text-placeholder">No honors data available</p>';
+            }
+            
+            const careerEl = document.getElementById('detail-career');
+            if (player.career && player.career.trim() !== '') {
+                careerEl.innerHTML = `<p>${player.career}</p>`;
+            } else {
+                careerEl.innerHTML = '<p class="detail-text-placeholder">No career data available</p>';
+            }
+            
+            // 填充市场分析
+            const analysisSection = document.getElementById('detail-section-analysis');
+            const analysisContent = document.getElementById('detail-analysis-content');
+            if (player.market_analysis && player.market_analysis.trim() !== '') {
+                // 显示分析部分，并将 \n 转换为 <br>
+                const formattedAnalysis = player.market_analysis.replace(/\n/g, '<br>');
+                analysisContent.innerHTML = formattedAnalysis;
+                analysisSection.style.display = 'block';
+            } else {
+                // 如果没有分析数据，隐藏整个部分
+                analysisSection.style.display = 'none';
+            }
+            
+            // 先显示基础值（作为占位符）
+            document.getElementById('detail-value-huge').textContent = `€${displayValue.toFixed(1)}M`;
+            
+            // 填充 YouTube 视频（如果有）
+            populateYouTubeVideo(player);
+            
+            // 获取并显示实时加权估值
+            if (currentModalPlayerId) {
+                await updateLiveValueDisplay(currentModalPlayerId);
+            }
+            
+            // 重置投票表单
+            document.getElementById('detail-vote-input').value = '';
+            document.getElementById('detail-vote-reason').value = '';
+            
+            // 重置评论区域状态
+            commentsCollapsed = false;
+            const commentsContent = document.getElementById('detail-comments-content');
+            const collapseBtn = document.getElementById('detail-collapse-btn');
+            if (commentsContent) commentsContent.classList.remove('collapsed');
+            if (collapseBtn) collapseBtn.classList.remove('collapsed');
+            
+            // 重置排序标签
+            document.querySelectorAll('.detail-tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.sort === 'newest') {
+                    btn.classList.add('active');
+                }
+            });
+            currentCommentSort = 'newest';
+            
+            // 加载评论
+            await loadPlayerComments(currentModalPlayerId, 'newest');
+            
+            // 绑定评论输入框 Enter 键提交
+            const commentInput = document.getElementById('detail-comment-input');
+            if (commentInput) {
+                // 清除之前的事件监听器（如果有）
+                const newInput = commentInput.cloneNode(true);
+                commentInput.parentNode.replaceChild(newInput, commentInput);
+                
+                newInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        submitComment();
+                    }
+                });
+            }
+            
+            // 更新 URL
+            const playerSlug = (player.name || 'unknown').toLowerCase().replace(/\s+/g, '-');
+            const newUrl = `${window.location.pathname}?player=${encodeURIComponent(playerSlug)}`;
+            history.pushState({ playerIndex: playerIndex }, '', newUrl);
+            
+            // 1. Hide List, Show Detail
+            document.getElementById('player-list-view').style.display = 'none';
+            document.getElementById('player-detail-view').style.display = 'grid'; // Use grid for layout
+            detailView.classList.add('active');
+            document.body.classList.add('detail-view-active');
+            
+            // 阻止背景滚动
+            document.body.style.overflow = 'hidden';
+        }
+
+        // 格式化日期
+        function formatDate(dateValue) {
+            if (!dateValue) return null;
+            
+            try {
+                // 如果是年份数字
+                if (typeof dateValue === 'number' && dateValue > 1900 && dateValue < 2100) {
+                    return dateValue.toString();
+                }
+                
+                // 如果是日期字符串
+                const date = new Date(dateValue);
+                if (isNaN(date.getTime())) return null;
+                
+                // 返回格式化的日期
+                return date.toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: 'numeric' 
+                });
+            } catch (e) {
+                return dateValue.toString();
+            }
+        }
+        
+        // 获取国家国旗 Emoji（简化版）
+        function getCountryFlag(countryName) {
+            if (!countryName) return '🌍';
+            
+            // 常见国家的简化映射（实际应用中可以使用完整的国家代码库）
+            const countryFlags = {
+                'france': '🇫🇷', 'spain': '🇪🇸', 'germany': '🇩🇪', 'italy': '🇮🇹',
+                'england': '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'brazil': '🇧🇷', 'argentina': '🇦🇷', 'portugal': '🇵🇹',
+                'netherlands': '🇳🇱', 'belgium': '🇧🇪', 'croatia': '🇭🇷', 'poland': '🇵🇱',
+                'norway': '🇳🇴', 'denmark': '🇩🇰', 'sweden': '🇸🇪', 'switzerland': '🇨🇭',
+                'mexico': '🇲🇽', 'uruguay': '🇺🇾', 'colombia': '🇨🇴', 'chile': '🇨🇱',
+                'japan': '🇯🇵', 'south korea': '🇰🇷', 'australia': '🇦🇺', 'canada': '🇨🇦',
+                'usa': '🇺🇸', 'united states': '🇺🇸', 'wales': '🏴󠁧󠁢󠁷󠁬󠁳󠁿', 'scotland': '🏴󠁧󠁢󠁳󠁣󠁴󠁿'
+            };
+            
+            const normalized = countryName.toLowerCase().trim();
+            return countryFlags[normalized] || '🌍';
+        }
+
+        // 获取实时加权估值（从 RPC 函数）
+        async function fetchLiveWeightedValue(playerId) {
+            try {
+                if (!playerId) {
+                    console.warn('No player ID provided for weighted valuation');
+                    return null;
+                }
+                
+                const { data, error } = await client.rpc('get_weighted_valuation', {
+                    player_id_input: playerId
+                });
+                
+                if (error) {
+                    console.error('Error fetching weighted valuation:', error);
+                    return null;
+                }
+                
+                // RPC 函数可能返回单个值或对象，根据实际情况调整
+                return data !== null && data !== undefined ? parseFloat(data) : null;
+            } catch (err) {
+                console.error('Unexpected error fetching weighted valuation:', err);
+                return null;
+            }
+        }
+        
+        // 更新详情页的实时估值显示
+        async function updateLiveValueDisplay(playerId) {
+            const valueElement = document.getElementById('detail-value-huge');
+            const labelElement = document.getElementById('detail-value-live-label');
+            
+            if (!valueElement || !playerId) return;
+            
+            // 显示加载状态
+            valueElement.textContent = 'Loading...';
+            
+            // 获取实时加权估值
+            const liveValue = await fetchLiveWeightedValue(playerId);
+            
+            if (liveValue !== null && !isNaN(liveValue)) {
+                // 显示实时值
+                valueElement.textContent = `€${liveValue.toFixed(1)}M`;
+                
+                // 显示标签
+                if (labelElement) {
+                    labelElement.style.display = 'block';
+                }
+            } else {
+                // 如果获取失败，使用回退值
+                const player = currentDetailPlayer || currentPlayersList.find(p => 
+                    (p.id || p.player_id || p.playerId) === playerId
+                );
+                const fallbackValue = player?.consensusValue || player?.base_value || 0;
+                valueElement.textContent = `€${fallbackValue.toFixed(1)}M`;
+                
+                // 隐藏标签
+                if (labelElement) {
+                    labelElement.style.display = 'none';
+                }
+            }
+        }
+        
+        // 填充球员徽章
+        function populatePlayerBadges(player) {
+            const badgesContainer = document.getElementById('detail-badges-grid');
+            const badges = [];
+            
+            // 🌍 Nationality
+            if (player.nationality) {
+                const flag = getCountryFlag(player.nationality);
+                badges.push(`
+                    <div class="detail-badge-pill">
+                        <span class="detail-badge-icon">${flag}</span>
+                        <span class="detail-badge-text">${player.nationality}</span>
+                    </div>
+                `);
+            }
+            
+            // 👕 Position
+            if (player.position) {
+                badges.push(`
+                    <div class="detail-badge-pill">
+                        <span class="detail-badge-icon">👕</span>
+                        <span class="detail-badge-text">${player.position}</span>
+                    </div>
+                `);
+            }
+            
+            // 🎂 Age
+            if (player.age) {
+                badges.push(`
+                    <div class="detail-badge-pill">
+                        <span class="detail-badge-icon">🎂</span>
+                        <span class="detail-badge-text">${player.age} yrs</span>
+                    </div>
+                `);
+            } else if (player.birth_year || player.birth_date) {
+                // 计算年龄（如果有出生年份或日期）
+                try {
+                    let birthYear;
+                    if (player.birth_year) {
+                        birthYear = parseInt(player.birth_year);
+                    } else if (player.birth_date) {
+                        birthYear = new Date(player.birth_date).getFullYear();
+                    }
+                    if (birthYear && !isNaN(birthYear)) {
+                        const age = new Date().getFullYear() - birthYear;
+                        badges.push(`
+                            <div class="detail-badge-pill">
+                                <span class="detail-badge-icon">🎂</span>
+                                <span class="detail-badge-text">${age} yrs</span>
+                            </div>
+                        `);
+                    }
+                } catch (e) {
+                    // 忽略错误
+                }
+            }
+            
+            // 🔢 Jersey Number
+            if (player.jersey_number || player.number) {
+                const number = player.jersey_number || player.number;
+                badges.push(`
+                    <div class="detail-badge-pill">
+                        <span class="detail-badge-icon">🔢</span>
+                        <span class="detail-badge-text">#${number}</span>
+                    </div>
+                `);
+            }
+            
+            // 如果没有徽章，显示占位符
+            if (badges.length === 0) {
+                badgesContainer.innerHTML = '';
+            } else {
+                badgesContainer.innerHTML = badges.join('');
+            }
+        }
+
+        // 填充 YouTube 视频
+        function populateYouTubeVideo(player) {
+            const container = document.getElementById('detail-highlights-container');
+            
+            if (!container) return;
+            
+            // Case 1: No Video ID -> Show Smart Search Button
+            if (!player.youtube_id || player.youtube_id.trim() === '') {
+                const playerName = player.name || 'Player';
+                const searchQuery = encodeURIComponent(`${playerName} highlights 2025`);
+                const searchUrl = `https://www.youtube.com/results?search_query=${searchQuery}`;
+                
+                container.innerHTML = `
+                    <div class="detail-iframe-placeholder" style="background: #0f0f0f; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 400px; border-radius: 12px;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📺</div>
+                        <div style="font-size: 1.2rem; font-weight: 600; margin-bottom: 1.5rem; color: #aaa;">Official highlight video coming soon</div>
+                        <a href="${searchUrl}" target="_blank" style="
+                            background-color: #FF0000; 
+                            color: white; 
+                            padding: 12px 24px; 
+                            border-radius: 24px; 
+                            text-decoration: none; 
+                            font-weight: bold; 
+                            font-size: 1rem;
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 8px;
+                            transition: transform 0.2s;
+                        " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            ▶ Watch on YouTube
+                        </a>
+                    </div>
+                `;
+                return;
+            }
+
+            // Case 2: Has Video ID -> Show Embed (Simplified URL)
+            const embedUrl = `https://www.youtube.com/embed/${player.youtube_id}`;
+            container.innerHTML = `
+                <iframe 
+                    src="${embedUrl}" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    loading="lazy"
+                    title="Player Highlights"
+                    style="width: 100%; height: 400px; border: none; border-radius: 12px;">
+                </iframe>
+            `;
+        }
+
+        // 分享球员
+        function sharePlayer() {
+            if (navigator.share && currentDetailPlayer) {
+                navigator.share({
+                    title: `${currentDetailPlayer.name} - Market Value`,
+                    text: `Check out ${currentDetailPlayer.name}'s market value: €${(currentDetailPlayer.consensusValue || currentDetailPlayer.base_value || 0).toFixed(1)}M`,
+                    url: window.location.href
+                }).catch(err => console.log('Error sharing', err));
+            } else {
+                // Fallback: Copy to clipboard
+                const url = window.location.href;
+                navigator.clipboard.writeText(url).then(() => {
+                    alert('Link copied to clipboard!');
+                }).catch(() => {
+                    alert('Unable to share. Please copy the URL manually.');
+                });
+            }
+        }
+
+        // 关闭球员详情页
+        function closePlayerDetail() {
+            showHome(); // Use the centralized showHome function
+            detailView.classList.remove('active');
+            document.body.classList.remove('detail-view-active');
+            document.body.style.overflow = '';
+        }
+        
+        // Function to go back to Home
+        window.showHome = function() {
+            document.getElementById('player-list-view').style.display = 'block';
+            document.getElementById('player-detail-view').style.display = 'none';
+            // Optional: Clear URL params
+            window.history.pushState({}, "", window.location.pathname);
+        }
+
+        // 处理浏览器后退按钮
+        window.addEventListener('popstate', function(e) {
+            if (detailView.classList.contains('active')) {
+                closePlayerDetail();
+            }
+        });
+
+        // 评论排序状态
+        let currentCommentSort = 'newest';
+        let commentsCollapsed = false;
+
+        // 切换评论排序
+        function switchCommentSort(sortType) {
+            currentCommentSort = sortType;
+            
+            // 更新标签状态
+            document.querySelectorAll('.detail-tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.sort === sortType) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // 重新加载评论
+            if (currentModalPlayerId) {
+                loadPlayerComments(currentModalPlayerId, sortType);
+            }
+        }
+
+        // 切换评论区域折叠/展开
+        function toggleCommentsSection() {
+            const content = document.getElementById('detail-comments-content');
+            const btn = document.getElementById('detail-collapse-btn');
+            
+            commentsCollapsed = !commentsCollapsed;
+            
+            if (commentsCollapsed) {
+                content.classList.add('collapsed');
+                btn.classList.add('collapsed');
+            } else {
+                content.classList.remove('collapsed');
+                btn.classList.remove('collapsed');
+            }
+        }
+
+        // 获取用户头像字母
+        function getAvatarLetter(userId) {
+            if (!userId || userId === 'Anonymous') return '?';
+            return userId.charAt(0).toUpperCase();
+        }
+
+        // 加载球员评论
+        async function loadPlayerComments(playerId, sortType = 'newest') {
+            const commentsContainer = document.getElementById('detail-comments-list');
+            
+            try {
+                let orderBy = 'created_at';
+                let ascending = false;
+                
+                if (sortType === 'hot') {
+                    orderBy = 'likes';
+                    ascending = false;
+                } else {
+                    orderBy = 'created_at';
+                    ascending = false;
+                }
+                
+                const { data: comments, error } = await client
+                    .from('comments')
+                    .select('*')
+                    .eq('player_id', playerId)
+                    .order(orderBy, { ascending: ascending })
+                    .limit(50);
+
+                if (error) throw error;
+
+                // 如果没有评论，显示友好提示
+                if (!comments || comments.length === 0) {
+                    commentsContainer.innerHTML = '<div class="detail-comments-empty">Be the first to comment! Share your thoughts about this player.</div>';
+                    return;
+                }
+
+                commentsContainer.innerHTML = comments.map(comment => {
+                    const content = comment.content || 'No content';
+                    const userName = comment.user_name || 'Anonymous Fan';
+                    const likesCount = comment.likes || 0;
+                    const commentId = comment.id;
+                    const avatarLetter = getAvatarLetter(userName);
+                    const date = comment.created_at ? new Date(comment.created_at).toLocaleDateString() : 'Recently';
+
+                    return `
+                        <div class="detail-comment-item" data-comment-id="${commentId}">
+                            <div class="detail-comment-header-row">
+                                <div class="detail-comment-avatar">${avatarLetter}</div>
+                                <div class="detail-comment-user-info">
+                                    <div class="detail-comment-username">${userName}</div>
+                                    <span class="detail-comment-date">${date}</span>
+                                </div>
+                            </div>
+                            <div class="detail-comment-text">${escapeHtml(content)}</div>
+                            <div class="detail-comment-actions">
+                                <button class="detail-comment-action-btn like-btn" onclick="toggleLike('${commentId}')" data-comment-id="${commentId}">
+                                    👍 Like (<span class="like-count">${likesCount}</span>)
+                                </button>
+                                <button class="detail-comment-action-btn">💬 Reply</button>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            } catch (err) {
+                console.error('Error loading comments:', err);
+                commentsContainer.innerHTML = '<div class="detail-comments-empty">Error loading comments. Please try again.</div>';
+            }
+        }
+
+        // HTML 转义辅助函数
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // 提交评论
+        async function submitComment() {
+            // 1. 获取输入框的值
+            const input = document.getElementById('detail-comment-input');
+            const button = document.getElementById('detail-comment-post-btn');
+            const content = input.value.trim();
+            
+            if (!content) {
+                alert('Please write something!');
+                input.focus();
+                return;
+            }
+
+            // 2. 🛡️【火狐补丁】重新定义 supabase 连接，防止外部变量读不到
+            // 使用全局定义的 SUPABASE_URL 和 SUPABASE_KEY
+            const _localClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+            // 3. 获取当前球员 ID
+            let playerId = currentModalPlayerId;
+            
+            // 如果 currentModalPlayerId 不存在，尝试从 URL 获取
+            if (!playerId) {
+                const params = new URLSearchParams(window.location.search);
+                const playerName = params.get('player');
+                
+                if (playerName) {
+                    // 从 URL 参数获取球员名称，然后查找 ID
+                    const { data: player, error: playerError } = await _localClient
+                        .from('players')
+                        .select('id')
+                        .ilike('name', `%${playerName}%`)
+                        .limit(1)
+                        .single();
+                    
+                    if (playerError || !player) {
+                        alert('Error: Player not found!');
+                        return;
+                    }
+                    playerId = player.id;
+                } else {
+                    alert('Unable to identify player. Please try again.');
+                    return;
+                }
+            }
+
+            const originalText = button.textContent;
+            try {
+                button.textContent = 'Posting...';
+                button.disabled = true;
+
+                // 4. 发送评论
+                const { error } = await _localClient
+                    .from('comments')
+                    .insert({
+                        player_id: playerId,
+                        content: content,
+                        user_name: 'Anonymous Fan',
+                        likes: 0
+                    });
+
+                if (error) {
+                    console.error('Comment insert error:', error);
+                    alert(`Failed to post comment: ${error.message}`);
+                    button.textContent = originalText;
+                    button.disabled = false;
+                    return;
+                }
+
+                // 成功反馈
+                alert('Comment Posted! 🎉');
+                button.textContent = 'Posted!';
+                button.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                
+                // 清空输入框
+                input.value = '';
+                
+                // 立即重新加载评论列表
+                await loadPlayerComments(playerId, currentCommentSort);
+                
+                // 恢复按钮
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '';
+                    button.disabled = false;
+                }, 1500);
+            } catch (err) {
+                console.error('Unexpected error while posting comment:', err);
+                alert('Unexpected error. Please try again.');
+                button.textContent = originalText;
+                button.disabled = false;
+            }
+        }
+
+        // 切换点赞
+        async function toggleLike(commentId) {
+            if (!commentId) return;
+            
+            const likeBtn = document.querySelector(`.like-btn[data-comment-id="${commentId}"]`);
+            const likeCountSpan = likeBtn?.querySelector('.like-count');
+            
+            if (!likeBtn || !likeCountSpan) return;
+            
+            // 防止重复点击
+            if (likeBtn.disabled) return;
+            
+            try {
+                // 获取当前点赞数
+                const { data: comment, error: fetchError } = await client
+                    .from('comments')
+                    .select('likes')
+                    .eq('id', commentId)
+                    .single();
+
+                if (fetchError) throw fetchError;
+
+                const currentLikes = comment.likes || 0;
+                const newLikes = currentLikes + 1;
+
+                // 乐观更新 UI
+                likeCountSpan.textContent = newLikes;
+                likeBtn.disabled = true;
+                likeBtn.style.opacity = '0.6';
+
+                // 更新数据库
+                const { error: updateError } = await client
+                    .from('comments')
+                    .update({ likes: newLikes })
+                    .eq('id', commentId);
+
+                if (updateError) {
+                    // 如果更新失败，恢复原值
+                    likeCountSpan.textContent = currentLikes;
+                    throw updateError;
+                }
+
+                // 如果当前排序是 Hot，重新加载以更新顺序
+                if (currentCommentSort === 'hot') {
+                    await loadPlayerComments(currentModalPlayerId, 'hot');
+                }
+            } catch (err) {
+                console.error('Error toggling like:', err);
+                // 恢复按钮状态
+                likeBtn.disabled = false;
+                likeBtn.style.opacity = '';
+            }
+        }
+
+        // 处理详情页投票提交
+        async function handleDetailVoteSubmit(event) {
+            event.preventDefault();
+            
+            const input = document.getElementById('detail-vote-input');
+            const reasonInput = document.getElementById('detail-vote-reason');
+            const button = document.getElementById('detail-vote-button');
+            const value = parseFloat(input.value);
+            
+            // Validation: Check for valid value range
+            if (!value || value <= 0) {
+                alert('Please enter a valid market value (e.g., 180)');
+                input.focus();
+                return;
+            }
+            
+            if (value < 1 || value > 500) {
+                alert('Value must be between 1M and 500M');
+                input.focus();
+                return;
+            }
+
+            const originalText = button.textContent;
+            try {
+                if (!currentModalPlayerId) {
+                    alert('Unable to identify player. Please try again.');
+                    return;
+                }
+                const userId = getLocalUserId();
+
+                // 获取原因文本（处理空值）
+                const userReason = reasonInput.value.trim();
+                
+                // 提交到 Supabase - 使用 UPSERT 处理重复投票
+                button.textContent = 'Saving...';
+                button.disabled = true;
+
+                const { error } = await client
+                    .from('ratings')
+                    .upsert({ 
+                        player_id: currentModalPlayerId, 
+                        user_rating: value, 
+                        user_id: userId,
+                        reason: userReason || null
+                    }, { onConflict: 'user_id, player_id' });
+
+                if (error) {
+                    console.error('Vote upsert error:', error);
+                    alert(`Failed to save vote: ${error.message}`);
+                    button.textContent = originalText;
+                    button.disabled = false;
+                    return;
+                }
+
+                // 成功反馈 - 使用更新消息
+                const successMessage = userReason 
+                    ? 'Vote Updated! 🔄' 
+                    : 'Vote Updated! 🔄';
+                button.textContent = successMessage;
+                button.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+
+                setTimeout(async () => {
+                    // 重新加载评论（使用当前排序）
+                    loadPlayerComments(currentModalPlayerId, currentCommentSort);
+                    
+                    // 重新获取并更新实时加权估值（投票后立即更新）
+                    if (currentModalPlayerId) {
+                        await updateLiveValueDisplay(currentModalPlayerId);
+                    }
+                    
+                    // 恢复按钮
+                    button.textContent = originalText;
+                    button.style.background = '';
+                    button.disabled = false;
+                    input.value = '';
+                    reasonInput.value = '';
+                    
+                    // 重新加载排行榜以显示更新的共识价格
+                    loadRankings();
+                }, 1500);
+            } catch (err) {
+                console.error('Unexpected error while voting:', err);
+                alert('Unexpected error. Please try again.');
+                button.textContent = originalText;
+                button.disabled = false;
+            }
+        }
+
+        // 处理投票提交（视觉展示，逻辑后续实现）
+        function getLocalUserId() {
+            const key = 'user_session_id';
+            let id = localStorage.getItem(key);
+            if (!id) {
+                if (window.crypto && crypto.randomUUID) {
+                    id = crypto.randomUUID();
+                } else {
+                    id = 'anon_' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+                }
+                localStorage.setItem(key, id);
+            }
+            return id;
+        }
+
+        async function handleVoteSubmit() {
+            const input = document.getElementById('modal-vote-input');
+            const value = parseFloat(input.value);
+            
+            if (!value || value <= 0) {
+                alert('Please enter a valid market value (e.g., 180)');
+                input.focus();
+      return;
+    }
+
+            const button = document.querySelector('.modal-vote-button');
+            const originalText = button.textContent;
+            try {
+                if (!currentModalPlayerId) {
+                    alert('Unable to identify player. Please try again.');
+                    return;
+                }
+                const userId = getLocalUserId();
+
+                // 提交到 Supabase
+                button.textContent = 'Submitting...';
+                button.disabled = true;
+
+                const { error } = await client
+                    .from('ratings')
+                    .insert({
+                        player_id: currentModalPlayerId,
+                        user_rating: value,
+                        user_id: userId
+                    });
+
+                if (error) {
+                    console.error('Vote insert error:', error);
+                    alert(`Failed to save vote: ${error.message}`);
+                    button.textContent = originalText;
+                    button.disabled = false;
+                    return;
+                }
+
+                // 成功反馈
+                button.textContent = 'Vote Saved! ✅';
+                button.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+
+                setTimeout(() => {
+                    closeModal();
+                    // 恢复按钮
+                    button.textContent = originalText;
+                    button.style.background = '';
+                    button.disabled = false;
+                    input.value = '';
+                    // 重新加载排行榜以显示更新的共识价格
+                    loadRankings();
+                }, 1000);
+            } catch (err) {
+                console.error('Unexpected error while voting:', err);
+                alert('Unexpected error. Please try again.');
+                button.textContent = originalText;
+                button.disabled = false;
+            }
+        }
+
+        // 生成价格历史图表（占位符数据）
+        function generatePriceHistoryChart(currentValue) {
+            const chartContainer = document.getElementById('modal-history-chart');
+            
+            // 生成7天的模拟数据（基于当前值的小幅波动）
+            const days = 7;
+            const data = [];
+            for (let i = 0; i < days; i++) {
+                // 生成 -5% 到 +5% 的随机波动
+                const variation = (Math.random() * 0.1 - 0.05);
+                const value = currentValue * (1 + variation);
+                data.push(Math.max(0, value));
+            }
+
+            // 计算最大高度用于归一化
+            const maxValue = Math.max(...data, currentValue);
+            const minValue = Math.min(...data, currentValue);
+            const range = maxValue - minValue || 1;
+
+            // 生成柱状图
+            chartContainer.innerHTML = data.map((value, index) => {
+                const height = ((value - minValue) / range) * 100;
+                const normalizedHeight = Math.max(20, height); // 最小高度20%
+                
+                return `<div class="modal-history-bar" style="height: ${normalizedHeight}%" title="Day ${index + 1}: €${value.toFixed(1)}M"></div>`;
+            }).join('');
+        }
+
+        // On Page Load: Check URL
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const playerName = params.get('player');
+            
+            if (playerName) {
+                // If URL has ?player=mbappe, try to find and open it
+                // This will be handled after players are loaded
+            } else {
+                showHome(); // Default to Home
+            }
+        };
+        
+        // 页面加载时立即执行
+        (async function init() {
+            await loadRankings();
+            
+            // 检查 URL 参数，如果有 player 参数，打开对应的详情页
+            const urlParams = new URLSearchParams(window.location.search);
+            const playerSlug = urlParams.get('player');
+            
+            if (playerSlug && currentPlayersList.length > 0) {
+                // 查找匹配的球员
+                const playerIndex = currentPlayersList.findIndex(p => {
+                    const nameSlug = (p.name || '').toLowerCase().replace(/\s+/g, '-');
+                    return nameSlug === playerSlug || nameSlug.includes(playerSlug) || playerSlug.includes(nameSlug);
+                });
+                
+                if (playerIndex >= 0) {
+                    openPlayerDetail(playerIndex);
+                } else {
+                    // If player not found, show home
+                    showHome();
+                }
+            } else {
+                // No player parameter, show home
+                showHome();
+            }
+        })();
+
+    </script>
+  </body>
+</html>
